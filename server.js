@@ -69,13 +69,12 @@ app.patch("/api/:id", (req,res) => {
     }
   })
 })
-/*
+
 //Serving Static Client Files
 if(process.env.NODE_ENV === "production"){
   //Set Static Folder
   app.use(express.static("scribble-notes-client/build"));
 }
-*/
 
 const port = process.env.PORT || 5000;
 
