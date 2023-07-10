@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 mongoose
-  .connect(process.env.DB_URI, {
+  .connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
