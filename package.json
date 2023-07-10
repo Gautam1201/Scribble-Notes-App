@@ -9,7 +9,8 @@
     "build": "cd scribble-notes-client && npm run build",
     "client-install": "npm install --prefix scribble-notes-client",
     "client": "npm start --prefix scribble-notes-client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "adaptable-postbuild": "npm run client-install && npm run build"
   },
   "author": "Gautam Pruthi",
   "license": "ISC",
